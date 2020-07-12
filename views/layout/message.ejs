@@ -1,0 +1,26 @@
+<% if (typeof error_message != "undefined") {%>
+<article class="message is-danger">
+  <div class="message-header">
+    <div>
+      Error
+    </div>
+  </div>
+  <div class="message-body">
+    <div>
+      <%= error_message %>
+    </div>
+  </div>
+</article>
+<% } %>
+
+<% if (typeof error != "undefined" && error.stack) {%>
+<article class="message is-danger">
+  <div class="message-body">
+    <% if(error.stack){ %>
+    <pre>
+      <%= error.stack %>
+    </pre>
+    <% }%>
+  </div>
+</article>
+<% } %>

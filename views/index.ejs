@@ -1,0 +1,127 @@
+<%- include('layout/header') %>
+
+<section class="section">
+  <div class="container">
+    <div class="box">
+      <div class="level">
+        <div class="level-left">
+          <span class="tag is-white">状态</span>
+          <div id="connect-status">
+            <span class="tag is-warning">未连接</span>
+          </div>
+          <div class="buttons ml-3">
+            <button class="button is-small is-info" id="connect">
+              连接
+            </button>
+            <button
+              class="button is-small is-danger"
+              style="display: none;"
+              id="disconnect"
+            >
+              断开
+            </button>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="dropdown is-hoverable is-info">
+            <div class="dropdown-trigger">
+              <button
+                class="button is-info"
+                aria-haspopup="true"
+                aria-controls="dropdown-menu4"
+              >
+                <span>ID:</span>
+                <span id="roomLink"></span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <img
+                    id="qrcode"
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=150%C3%97150&data=https://www.zhuax.com"
+                  />
+                </div>
+
+                <div class="dropdown-item has-text-centered">
+                  将文件传输到移动设备上
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <form id="transfer-form">
+        <div class="file">
+          <label class="file-label">
+            <input class="file-input" type="file" name="file" id="file" />
+            <span class="file-cta">
+              <span class="file-icon">
+                <i class="fas fa-upload"></i>
+              </span>
+              <span class="file-label">
+                选择文件
+              </span>
+            </span>
+          </label>
+          <button class="button is-info ml-2" disabled id="sendFile">
+            发送
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="box">
+      <!-- 发送文件 -->
+      <div class="mb-2">
+        <span class="tag is-info">
+          正在发送
+        </span>
+        <span id="sendingFileName"> </span>
+      </div>
+
+      <div class="level">
+        <progress
+          id="sendProgress"
+          class="progress is-primary"
+          value="0"
+          max="100"
+        >
+        </progress>
+      </div>
+      <!-- / 发送文件结束 -->
+
+      <!-- 接收文件 -->
+      <div class="mb-2">
+        <span class="tag is-info">
+          正在接收
+        </span>
+        <span id="receivingFileName"> </span>
+      </div>
+      <div class="level">
+        <progress
+          id="receiveProgress"
+          class="progress is-primary"
+          value="0"
+          max="100"
+        >
+        </progress>
+      </div>
+      <!-- / 接收文件结束 -->
+    </div>
+
+    <div class="box">
+      <h3 class="title is-3 border">文件列表</h3>
+      <ul id="transferedFileList"></ul>
+    </div>
+  </div>
+</section>
+<%- include('layout/footer') %>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/transfer.js"></script>
+
+<%- include('layout/foot') %>
