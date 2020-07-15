@@ -1,0 +1,104 @@
+{
+  "name": "Transfer",
+  "short_name": "Transfer",
+  "description": "基于 WebRTC 点对点文件传输",
+  "start_url": "/?from=pwa",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#F7CA38",
+  "background_color": "#F7CA38",
+  "lang": "zh-CN",
+  "scope": "/",
+  "icons": [
+      {
+          "src": "/icons/16.png",
+          "sizes": "16x16",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/32.png",
+          "sizes": "32x32",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/36.png",
+          "sizes": "36x36",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/48.png",
+          "sizes": "48x48",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/57.png",
+          "sizes": "57x57",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/72.png",
+          "sizes": "72x72",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/76.png",
+          "sizes": "76x76",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/96.png",
+          "sizes": "96x96",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/120.png",
+          "sizes": "120x120",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/144.png",
+          "sizes": "144x144",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/180.png",
+          "sizes": "180x180",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/256.png",
+          "sizes": "256x256",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "/icons/1024.png",
+          "sizes": "1024x1024",
+          "type": "image/png",
+          "purpose": "any maskable"
+      }
+  ]
+}

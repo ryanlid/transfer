@@ -19,6 +19,15 @@
       integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
       crossorigin="anonymous"
     />
+    <link rel="manifest" href="/manifest.json" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/sw.js')
+          .then(() => console.log('sw.js 注册成功'))
+          .catch(() => console.log('sw.js 注册失败'));
+      }
+    </script>
   </head>
 
   <body>
