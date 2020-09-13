@@ -62,7 +62,7 @@ roomLink.setAttribute(
 history.pushState(null, '', './?id=' + room);
 
 qrcode.src =
-  'https://api.qrserver.com/v1/create-qr-code/?size=150%C3%97150&data=' +
+  'https://www.yidiankuaile.com/v1/qrcode?data=' +
   location.href;
 
 roomLink.textContent = room;
