@@ -1,11 +1,11 @@
-# Transfer
+# Send
 
-[Transfer](https://github.com/ryanlid/transfer) 基于 WebRTC 点对点文件传输
+[Send](https://github.com/ryanlid/send) 基于 WebRTC 点对点文件传输
 
 源码
 
-https://github.com/ryanlid/transfer
+https://github.com/ryanlid/send
 
 预览
 
-https://transfer.funs.app
+https://send.yidiankuaile.com

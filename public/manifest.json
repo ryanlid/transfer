@@ -1,6 +1,6 @@
 {
-  "name": "Transfer",
-  "short_name": "Transfer",
+  "name": "Send",
+  "short_name": "Send",
   "description": "基于 WebRTC 点对点文件传输",
   "start_url": "/?from=pwa",
   "display": "standalone",

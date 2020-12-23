@@ -1,5 +1,5 @@
 {
-  "name": "chat",
+  "name": "send",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryanlid/chat.git"
+    "url": "git+https://github.com/ryanlid/send.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ryanlid/chat/issues"
+    "url": "https://github.com/ryanlid/send/issues"
   },
-  "homepage": "https://github.com/ryanlid/chat#readme"
+  "homepage": "https://github.com/ryanlid/send#readme"
 }
